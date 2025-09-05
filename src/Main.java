@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        //Objeto que gera a matricula aletoria e guarda as outras geradas
+        // Objeto que gera a matricula aletoria e guarda as outras geradas
         GeradorMatricula geraMatriculaAluno = new GeradorMatricula();
-        //S canner
+        // Scanner
         Scanner scanner = new Scanner(System.in);
         // Turmas
         Turma turmaA = new Turma("Turma A");
@@ -66,7 +66,7 @@ public class Main {
                             Funcoes.listaTurma(turmaA);
                             break;
                         case 2:
-                            Funcoes.listaTurma(turmaA);
+                            Funcoes.listaTurma(turmaB);
                             break;
                         case 3:
                             Funcoes.listaTurma(turmaC);

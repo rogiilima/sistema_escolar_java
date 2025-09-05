@@ -17,17 +17,17 @@ public class Turma {
         if (alunosTurma.isEmpty()) {
             System.out.println("Nenhum aluno cadastrado...");
         } else {
-            for (Aluno Aluno : alunosTurma) { //Pega cada aluno e chama o metodo exibirInfo
-                Aluno.exibirInfo();
+            for (Aluno aluno : alunosTurma) { //Pega cada aluno e chama o metodo exibirInfo
+                aluno.exibirInfo();
                 System.out.println("+----------------+----------------------+");
             }
         }
     }
 // Esse método retorna um aluno para ser reaproveitado no método de removar
     public Aluno buscarAlunoPorMatricula(String matricula) {
-        for (Aluno Aluno : alunosTurma) {
-            if (Aluno.getMatricula() == matricula) {
-                return Aluno;
+        for (Aluno aluno : alunosTurma) {
+            if (aluno.getMatricula() == matricula) {
+                return aluno;
             }
         }
         return null;
@@ -46,11 +46,11 @@ public class Turma {
         if (alunosTurma.isEmpty()) {
             return 0.0; //Para o caso da turma não existir
         }
-        double soma = 0;
-        for (Aluno Aluno : alunosTurma) {
-            soma += Aluno.getNota();
+        double media = 0;
+        for (Aluno aluno : alunosTurma) {
+            media += aluno.getNota();
         }
-        return soma / alunosTurma.size();
+        return media / alunosTurma.size();
     }
     
     public String getNomeTurma() {

@@ -10,15 +10,6 @@ public class Aluno {
         this.nota = nota;
     }
 
-    public void exibirInfo(){
-        String linha = "+----------------+----------------------+";
-        System.out.println(linha);
-        System.out.printf("| %-14s | %-20s |%n", "Nome", nome);
-        System.out.printf("| %-14s | %-20s |%n", "Matrícula", matricula);
-        System.out.printf("| %-14s | %-20.2f |%n", "Nota", nota);
-        System.out.println(linha);
-    }
-
     // Getters Setters 
     public String getNome() {
         return nome;
@@ -35,7 +26,15 @@ public class Aluno {
     public String getMatricula() {
         return matricula;
     }
-
+    
+    public void exibirInfo(){
+        String linha = "+----------------+----------------------+";
+        System.out.println(linha);
+        System.out.printf("| %-14s | %-20s |%n", "Nome", nome);
+        System.out.printf("| %-14s | %-20s |%n", "Matrícula", matricula);
+        System.out.printf("| %-14s | %-20.2f |%n", "Nota", nota);
+        System.out.println(linha);
+    }
 
     
 }
