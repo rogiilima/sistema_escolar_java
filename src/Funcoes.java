@@ -28,11 +28,11 @@ public class Funcoes {
     public final static void adicionarAlunoTurma(Turma turma, Scanner scanner, GeradorMatricula a){
         System.out.println("Digite o nome do aluno:");
         String nome = scanner.nextLine();
-        scanner.nextLine(); //Limpa o buffer do \n
+        // scanner.nextLine(); //Limpa o buffer do \n
 
         System.out.println("Digite a nota do aluno(Separador decimar é a ',' Ex.:7,9):");
         double nota = scanner.nextDouble();
-        scanner.nextLine(); //Limpa o buffer do \n
+        // scanner.nextLine(); //Limpa o buffer do \n
 
         // matrícula gerada automaticamente pelo objeto que você fez
         String matricula = a.geraMatriculaAluno(); 
@@ -47,7 +47,7 @@ public class Funcoes {
     public static void buscarAlunoPorMatricula(Turma turma, Scanner scanner){
         System.out.println("Digite a matricula:");
         String matricula = scanner.nextLine();
-        scanner.nextLine(); //Limpa o buffer do \n
+        // scanner.nextLine(); //Limpa o buffer do \n
 
         Aluno aluno = turma.buscarAlunoPorMatricula(matricula);
 
@@ -62,7 +62,7 @@ public class Funcoes {
     public static void removeAluno(Turma turma, Scanner scanner){
         System.out.println("Digite a matricula:");
         String matricula = scanner.nextLine();
-        scanner.nextLine(); //Limpa o buffer do \n
+        // scanner.nextLine(); //Limpa o buffer do \n
 
         if (turma.removerAluno(matricula)) {
             System.out.println("Removido com sucesso!");
